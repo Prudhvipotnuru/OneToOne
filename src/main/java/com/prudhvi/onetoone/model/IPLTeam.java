@@ -18,6 +18,7 @@ public class IPLTeam {
 	private Double purse;
 	private String captainName;
 	
+	//fetch type doesnt matter for oneToOne mapping(no matter if it is lazy or eager, it works the same)
 	@OneToOne(mappedBy = "iplTeam",cascade = CascadeType.ALL)
 	private HomeGround homeGround;
 }
